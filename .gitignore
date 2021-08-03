@@ -3,3 +3,11 @@
 ################################################################################
 
 /LesDouzeSalopards/bin/Debug
+/LesDouzeSalopards/obj/Debug
+/LesDouzeSalopards.Business/bin/Debug
+/LesDouzeSalopards.Business/obj/Debug
+/LesDouzeSalopards.Entities/bin/Debug
+/LesDouzeSalopards.Entities/obj/Debug
+/LesDouzeSalopards.Tests/bin/Debug
+/LesDouzeSalopards.Tests/obj/Debug
+/packages
