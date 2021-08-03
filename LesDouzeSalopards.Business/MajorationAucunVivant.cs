@@ -5,11 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 
 using LesDouzeSalopards.Entities;
+using log4net;
 
 namespace LesDouzeSalopards.Business
 {
     public class MajorationAucunVivant: IRègle
     {
+        private static readonly ILog Log = LogManager.GetLogger(typeof(MajorationAucunVivant));
+
         public IRègle RèglePrécédente { get; set; }
         private List<Condamné> _listeCondamnés;
 
@@ -21,6 +24,7 @@ namespace LesDouzeSalopards.Business
 
         public Prime CalculePrime(Prime prime)
         {
+            Log.Info($"CalculePrime : BEGIN");
             if (IsSatisfied())
             {
                 prime.Montant = prime.Montant * (100 + Constants.PourcentageAucunVivant) / 100; 
